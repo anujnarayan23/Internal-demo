@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: events-internal-service
+  name: events-internal
   labels:
-    app: events-internal-service
+    app: events-internal
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: events-internal-service
+      app: events-internal
   template:
     metadata:
       labels:
-        app: events-internal-service
+        app: events-internal
     spec:
       containers:
-      - name: avenger-backend
+      - name: events-internal
         image: gcr.io/playground-s-11-0bd726/internal-image:v1.0.0
         env:
         - name: PORT
@@ -49,5 +49,5 @@ spec:
         protocol: TCP
         targetPort: 8082
   selector: 
-    app: events-internal-service
+    app: events-internal
   type: ClusterIP
