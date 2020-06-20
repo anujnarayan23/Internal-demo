@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: avenger-backend
+  name: events-internal-service
   labels:
-    app: avenger-backend
+    app: events-internal-service
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: avenger-backend
+      app: events-internal-service
   template:
     metadata:
       labels:
-        app: avenger-backend
+        app: events-internal-service
     spec:
       containers:
       - name: avenger-backend
@@ -49,5 +49,5 @@ spec:
         protocol: TCP
         targetPort: 8082
   selector: 
-    app: avenger-backend
+    app: events-internal-service
   type: ClusterIP
