@@ -42,7 +42,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata: 
-  name: avenger-backend-service
+  name: events-internal-service
 spec: 
   ports: 
      -  port: 80
