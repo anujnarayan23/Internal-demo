@@ -7,9 +7,7 @@
     "start": "node server.js",
     "test": "nyc mocha --exit",
     "sonar": "sonar-scanner",
-    "jest": {
-    "testResultsProcessor": "jest-sonar-reporter"
-            }
+    "testResultsProcessor": "jest-sonar-reporter"     
   },
   
   "keywords": [],
