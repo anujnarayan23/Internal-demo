@@ -23,4 +23,20 @@
     "supertest": "^4.0.2",
     "sonarqube-scanner": "^2.0.2"
   }
+  
+  {
+  "name": "continuous-test-code-coverage-guide",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+  },
+  ...
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
+    ...
+  }
+}
 }
