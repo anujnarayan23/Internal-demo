@@ -6,8 +6,12 @@
   "scripts": {
     "start": "node server.js",
     "test": "nyc mocha --exit",
-    "sonar": "sonar-scanner"
+    "sonar": "sonar-scanner",
+    "jest": {
+    "testResultsProcessor": "jest-sonar-reporter"
+            }
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
