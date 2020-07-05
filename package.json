@@ -9,12 +9,6 @@
     "sonar": "sonar-scanner"   
   },
   
-  "name1": "continuous-test-code-coverage-guide",
-  "scripts1": {
-    "start": "webpack",
-    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
-  },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,14 +16,11 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
   },
-  "jest": {
-    "coverageReporters": ["text","cobertura"]
-  },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.1.2",
     "nyc": "^14.1.1",
     "supertest": "^4.0.2",
     "sonarqube-scanner": "^2.0.2"
-  }  
   }
+}
