@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js , webpack",
-    "test": "jest --coverage --coverageDirectory=output/coverage/jest",
+    "test": "nyc mocha --exit, jest --coverage --coverageDirectory=output/coverage/jest",
     "sonar": "sonar-scanner",
     "jest": {
     "coverageReporters": ["text","cobertura"]
