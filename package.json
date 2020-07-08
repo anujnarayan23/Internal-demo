@@ -5,11 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js , webpack",
-    "test": "nyc mocha --exit , jest --coverage --coverageDirectory=output/coverage/jest",
+    "test": "nyc mocha --exit , jest --coverage",
     "sonar": "sonar-scanner",
     "jest": {
     "coverageReporters": ["text","cobertura"]
-  }
+            }
   },
   
   "keywords": [],
