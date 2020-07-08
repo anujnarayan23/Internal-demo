@@ -8,7 +8,7 @@
     "test": "nyc mocha --exit, jest --coverage --coverageDirectory=output/coverage/jest",
     "sonar": "sonar-scanner",
     "jest": {
-    "coverageReporters": ["text","cobertura"]
+    "coverageReporters": ["text","html"]
             }
   },
   
