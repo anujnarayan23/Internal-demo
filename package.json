@@ -4,11 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js , webpack",
-    "test": "nyc mocha --exit, jest --coverage --coverageDirectory=output/coverage/jest",
-    "sonar": "sonar-scanner",
-    "coverageReporters": ["text","html"]
-            
+    "start": "node server.js",
+    "test": "nyc mocha --exit",
+    "sonar": "sonar-scanner"
   },
   
   "keywords": [],
@@ -23,7 +21,6 @@
     "mocha": "^7.1.2",
     "nyc": "^14.1.1",
     "supertest": "^4.0.2",
-    "sonarqube-scanner": "^2.0.2",
-    "jest" : "^26.1.0"
+    "sonarqube-scanner": "^2.0.2"
   }
 }
